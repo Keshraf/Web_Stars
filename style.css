@@ -1,0 +1,487 @@
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    height: 100vh;
+    font-family: 'Poppins';
+    background: rgb(24, 24, 24);
+}
+
+
+@font-face{
+    font-family: 'Pulse';
+    src:url("Pulse.otf");
+    font-style: normal;
+    font-weight: 100;
+
+}
+@font-face{
+    font-family: 'Ailerons';
+    src:url("Ailerons-Typeface.otf");
+    font-style: normal;
+    font-weight: 100;
+
+}
+@font-face{
+    font-family: 'Tw Cen Mt';
+    src:url("Tw\ Cen\ MT.ttf");
+    font-style: normal;
+    font-weight: 100;
+
+}
+
+body{
+    overflow-x: hidden;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; */
+}
+
+.webgl
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    mix-blend-mode: exclusion;
+    
+    /* margin-top: 150px; */
+    z-index: 0;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Pulse',sans-serif;
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 350px;
+    margin-top: 250px;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    /* margin: 0; */
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheading{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Ailerons',sans-serif;
+    font-size: 80px;
+    letter-spacing: 0.15em;
+    margin-bottom: 20px;
+}
+
+.outer-box{
+    width: 50%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -6px -6px 25px rgba(42, 42, 42, 0.5), 13px 15px 21px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.inline-text{
+    width: 40%;
+    height: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    margin: 65px;
+}
+
+.image-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('https://keshraf.github.io/Resources/dyson-sphere.png'); */
+    background-position-x: right;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100% !important; 
+    z-index: 3;
+}
+
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 55%;
+    margin: 60px auto 30px auto;
+}
+
+#logi-text{
+    font-size: 24px;
+}
+
+
+/* #about-img{
+    background-image: url('https://keshraf.github.io/Resources/dyson-sphere.png') !important;
+}
+#logi-img{
+    background-image: url('https://keshraf.github.io/Resources/solar-system.png');
+}
+#tech-img{
+    background-image: url('https://keshraf.github.io/Resources/dyson-sphere.png');
+}
+#trav-img{
+    background-image: url('https://keshraf.github.io/Resources/worm-hole.png');
+}
+#virt-img{
+    background-image: url('https://keshraf.github.io/Resources/cyro-sleep.png');
+} */
+
+img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.imag-box{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.above{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ 
+ .main-nav{
+    margin: 45px auto 50px auto;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+ }
+ .main-nav-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+ 
+ .main-nav-item{
+     display: flex;
+     flex: row;
+     justify-content: center;
+     align-items: center;
+     width: 100% ; /*CHANGED FROM 20% to 100%*/
+    font-size: 18px;
+    font-family: 'TW Cen MT';
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin: 15px 15px;
+    text-align: center !important;
+    /* padding-right: 15px; */
+    padding: 15px;
+ }
+ 
+ 
+ .btn{
+     position: relative;	
+     transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+     cursor: pointer;
+     user-select: none;
+ }
+ 
+ .btn:before, .btn:after {
+     content: '';
+     position: absolute;	
+     transition: inherit;
+     z-index: -1;
+ }
+ 
+ .btn:hover {
+     color: #14213D;
+     transition-delay: .5s;
+ }
+ 
+ .btn:hover:before {
+     transition-delay: 0s;
+ }
+ 
+ .btn:hover:after {
+     background: #fff;
+     transition-delay: .35s;
+ }
+ 
+ .from-top:before, 
+ .from-top:after {
+     left: 0;
+     height: 0;
+     width: 100%;
+ }
+ 
+ .from-top:before {
+     bottom: 0;	
+     border: 1px solid  #fff;
+     border-top: 0;
+     border-bottom: 0;
+ }
+ 
+ .from-top:after {
+     top: 0;
+     height: 0;
+     /* right: 1; */
+ }
+ 
+ .from-top:hover:before,
+ .from-top:hover:after {
+     height: 100%;
+ }
+ 
+ a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+} 
+
+
+@media screen and (max-width:1500px ) {
+    .outer-box{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width:1250px ) {
+    .outer-box{
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width:950px ) {
+    .outer-box{
+        width: 85%;
+    }
+    .inline-text{
+        font-size: 100%;
+    }
+    
+}
+
+@media screen and (max-width:800px ) {
+    .outer-box{
+        width: 90%;
+    }
+    .inline-text{
+        font-size: 100%;
+        margin: 40px;
+    }
+    
+}
+
+@media screen and (max-width:700px ) {
+    .inline-text{
+        font-size: 90%;
+    }
+    h1{
+        font-size: 7rem;
+    }
+    
+}
+
+@media screen and (max-width:700px ) {
+    .main-nav{
+        display: none;
+    }
+    .subheading{
+        font-size: 60px;
+    }
+    hr{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:550px ) {
+    .outer-box{
+        width: 95%;
+    }
+    .inline-text{
+        font-size: 75%;
+        margin: 30px;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .subheading{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    hr{
+        margin-top: 30px;
+    }
+    
+}
+
+@media screen and (max-width:450px ) {
+    .inline-text{
+        font-size: 60%;
+    }
+    h1{
+        font-size: 4rem;
+    }
+}
+
+
+/*SIDE_NAV*/
+
+@media screen and (max-width:1000px){
+    /*SIDE_NAV*/
+    .side-nav{
+        visibility: visible !important;
+    }
+}
+    
+
+
+.side-nav{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    visibility: hidden;
+    z-index: 2 !important;    
+}
+
+.but-nav{
+    width: 100%;
+    height: auto   ;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    border-style: none;  
+    /* font-size: 150px;  */
+    cursor: pointer;  
+}
+
+.material-icons{
+    font-size: 35px !important;
+}
+.nav2-column{
+    visibility: visible !important;
+    z-index: 3 !important;
+}
+.side-nav-list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.close-nav{
+    color: white;
+    cursor: pointer;
+}
+
+.overlay{
+    visibility: hidden;
+}
+
+.overlay2{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: visible;
+    z-index: 2 !important;
+    cursor: pointer;
+}
+
+.nav-hr{
+    width: 60% !important;
+    margin: 5px auto !important;
+}
+
+.li-side{
+    width: 50%;
+    font-size: 15px;
+    margin: 5px auto;
+    padding: 15px 15px;
+
+}
+.nav-column{
+    /* padding: 10px; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    visibility: hidden;
+}
+
+/*SIDE_NAV_END*/
